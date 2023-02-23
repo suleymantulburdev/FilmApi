@@ -9,5 +9,5 @@ COPY . ./
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
-COPY --from=build-env /app/out .
+COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet","FilmApi.dll"]
