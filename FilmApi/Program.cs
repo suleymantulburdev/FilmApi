@@ -2,6 +2,7 @@ using FilmApi.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://*:1000");
 
 // Add services to the container.
 var conn = builder.Configuration.GetConnectionString("DefaultConnection");
